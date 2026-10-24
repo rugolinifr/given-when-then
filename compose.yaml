@@ -1,0 +1,16 @@
+services:
+  php:
+    image: rugolinifr/given-when-then:0.0.0
+    build:
+      context: $PWD
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    networks:
+      - enhanced_find_by
+
+networks:
+  enhanced_find_by:
+    driver: bridge
