@@ -1,0 +1,36 @@
+{
+    "name": "rugolinifr/given-when-then",
+    "description": "Wraps PHPUnit and Symfony's `WebTestCase` with methods having the \"given\",\"when and \"then\" prefixes to create REST API tests.",
+    "type": "library",
+    "keywords": [
+        "symfony",
+        "webtestcase",
+        "gherkin",
+        "rest api",
+        "api test",
+        "given",
+        "when",
+        "then"
+    ],
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain UGOLINI",
+            "role": "developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rugolinifr\\GivenWhenThen\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rugolinifr\\GivenWhenThen\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    }
+}
